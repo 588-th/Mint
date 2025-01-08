@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background"
+    tools:context=".activities.StartingAmountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/golostext_medium"
+            android:text="Starting\namount"
+            android:textAlignment="center"
+            android:textColor="@color/white_gray"
+            android:textSize="48sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewInstruction1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/golostext_regular"
+            android:text="Enter your starting amount"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewStartingAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/golostext_regular"
+            android:textColor="@color/white_gray"
+            android:textSize="36sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:columnCount="3"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/buttonOne"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="1"
+                android:text="@string/digit_one"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonTwo"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="2"
+                android:text="@string/digit_two"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonThree"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="3"
+                android:text="@string/digit_three"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonFour"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="4"
+                android:text="@string/digit_four"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonFive"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="5"
+                android:text="@string/digit_five"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonSix"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="6"
+                android:text="@string/digit_six"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonSeven"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="7"
+                android:text="@string/digit_seven"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonEight"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="8"
+                android:text="@string/digit_eight"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonNine"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="9"
+                android:text="@string/digit_nine"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonEmpty"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                tools:visibility="invisible" />
+
+            <Button
+                android:id="@+id/buttonZero"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="numberEnter"
+                android:tag="0"
+                android:text="@string/digit_zero"
+                android:textColor="@color/white_gray"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/buttonBackspace"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/golostext_regular"
+                android:onClick="backspacePress"
+                android:text="@string/back"
+                android:textColor="@color/white_gray"
+                android:textSize="22sp" />
+
+        </GridLayout>
+
+        <Button
+            android:id="@+id/buttonEnter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/golostext_regular"
+            android:onClick="enterStartingAmount"
+            android:text="Continue"
+            android:textColor="@color/white_gray"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
